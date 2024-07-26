@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Courier new', Courier, monospace;
+    background: linear-gradient(to bottom,
+    lightskyblue, lightsteelblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: aliceblue;
+    min-width: 90%;
+    min-height: 50%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: black 0 5px 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.photos-amount {
+    padding: 20px 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.hidden-errorMessage {
+    display: none;
+}
+
+.visible-errorMessage{
+    font-weight: 600;
+    color: red;
+    margin: 10px;
+}
+
+.btn {
+    margin: 20px 0;
+    text-transform: uppercase;
+    min-width: 250px;
+    min-height: 50px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: darkseagreen;
+    color: black;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out;
+}
+
+
+.hidden-label {
+    left: -100vw;
+    position: absolute;
+}
+
+.gallery-img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.hidden-gallery {
+    display: none;
+}
+
+.active-gallery {
+    display: block;
+    overflow: scroll;
+}
