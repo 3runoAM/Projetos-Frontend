@@ -13,12 +13,12 @@
             <h1>Photo Gallery</h1>
             <h2>Enter the number of photos</h2>
             <label for="photos-amount" class="hidden-label">Number of photos: </label>
-            <input min="1" max="10" type="number" id="photos-amount" class="photos-amount">
-            <span id="errorMessage" class="hidden-errorMessage">Erro</span>
-            <button type="button" id="get-photos" class="btn">Get photos</button>
-            <div class="hidden-gallery" id="gallery">
 
-            </div>
+            <input min="1" max="10" type="number" id="photos-amount" class="photos-amount">
+            <span id="errorMessage" class="errorMessage"></span>
+            <button type="button" id="get-photos" class="btn">Get photos</button>
+            <img id="loading-spinner" class="loading-spinner" src="/images/loading-gif.svg" alt="Loading spinner">
+            <div class="gallery" id="gallery"></div>
         </div>
         <!--********************************************************************************************************-->
         <script src="js/index.js"></script>

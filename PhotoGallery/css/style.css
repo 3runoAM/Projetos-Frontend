@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 .content-container {
@@ -16,16 +17,20 @@ body {
     justify-content: center;
     align-items: center;
     background: aliceblue;
-    min-width: 90%;
-    min-height: 50%;
+    width: 100rem;
+    min-height: 40rem;
     margin: 10px;
     border-radius: 5px;
     box-shadow: black 0 5px 1rem;
-    text-align: center;
+    padding: 3rem;
 }
 
 h2 {
     font-weight: 400;
+}
+
+.loading-spinner{
+    display: none;
 }
 
 .photos-amount {
@@ -36,11 +41,8 @@ h2 {
     border-radius: 5px;
 }
 
-.hidden-errorMessage {
+.errorMessage {
     display: none;
-}
-
-.visible-errorMessage{
     font-weight: 600;
     color: red;
     margin: 10px;
@@ -79,11 +81,10 @@ h2 {
     margin: 5px;
 }
 
-.hidden-gallery {
+.gallery {
     display: none;
-}
-
-.active-gallery {
-    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100rem;
     overflow: scroll;
 }
