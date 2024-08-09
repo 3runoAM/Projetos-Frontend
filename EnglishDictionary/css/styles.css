@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: lightyellow;
+    font-family: "Courier New", monospace;
+}
+
+.content-container {
+    background-color: rgba(240, 248, 255, 0.8);
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.word-input{
+    height: 53px;
+    width: 300px;
+    background-color: rgba(225, 225, 255, 0.3);
+    border:  rgba(225, 225, 255, 0.4);
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 0 42px;
+}
+
+.meaning-container {
+    display: none;
+}
